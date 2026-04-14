@@ -1,35 +1,25 @@
 # ⚛️ Quantum Python Learning
 
-My study journal combining **Linear Algebra** (Strang), **Python** and **Quantum Computing** (Qiskit). Updated as I learn.
+Study repository combining **Linear Algebra**, **Python** and **Quantum Computing** with IBM Qiskit. Updated as I learn.
 
----
+## About
 
-## 📅 Study Log
+This repository documents my journey into quantum computing. Each notebook connects mathematical foundations from Strang's Linear Algebra with practical quantum computing implementations using Qiskit and Python.
 
-### Day 1 — Strang 2.3: Linear Independence, Basis, Dimension
-**Concepts:** Linear independence, spanning, basis, dimension, rank  
-**Quantum connection:** Computational basis {|0⟩, |1⟩}, superposition, measurement probabilities  
-**Qiskit practice:**
-- Qubit in |0⟩ state → 100% probability of measuring 0
-- Hadamard gate → 50/50 superposition
-- RY gate → "biased coin" with custom probabilities
-
-📓 [`strang-2.3-quantum.ipynb`](./strang-2.3-quantum.ipynb)
-
----
+The goal is to build a solid foundation in the math and tools behind quantum software development, leading to the IBM Quantum Developer Certification.
 
 ## 📂 Structure
 
 ```
-├── strang-2.3-quantum.ipynb    → Day 1: Independence, basis, superposition
-├── testjupyter day1.ipynb      → Initial Jupyter/Qiskit setup tests
-└── ...                         → More notebooks coming
+├── docs/           → Study notes and theory summaries
+├── notebooks/      → Jupyter notebooks with exercises and experiments
+└── README.md       → This file
 ```
 
 ## 🗺️ Roadmap
 
 ### Linear Algebra (Strang)
-- [x] 2.3 — Linear Independence, Basis, Dimension
+- [ ] 2.3 — Linear Independence, Basis, Dimension
 - [ ] 2.4 — The Four Fundamental Subspaces
 - [ ] 3.1 — Orthogonal Vectors and Subspaces
 - [ ] 3.2 — Projections
@@ -38,19 +28,17 @@ My study journal combining **Linear Algebra** (Strang), **Python** and **Quantum
 - [ ] 4.2 — Diagonalization
 
 ### Quantum Computing (Qiskit)
-- [x] Qubit states and measurement
-- [x] Hadamard gate and superposition
-- [x] RY rotation and probability control
-- [ ] Multi-qubit systems and entanglement
+- [ ] Qubit states and measurement
 - [ ] Quantum gates as matrix operations
+- [ ] Superposition and probability
+- [ ] Multi-qubit systems and entanglement
 - [ ] Bell states
 - [ ] Grover's algorithm
 - [ ] VQE and QAOA
 - [ ] IBM Quantum Developer Certification prep
 
 ### Python Scientific
-- [x] NumPy basics
-- [ ] Matrix operations with NumPy
+- [ ] NumPy matrix operations
 - [ ] SciPy for linear algebra
 - [ ] Matplotlib for visualization
 
@@ -61,7 +49,7 @@ My study journal combining **Linear Algebra** (Strang), **Python** and **Quantum
 - Qiskit Aer 0.17.2
 - NumPy / Matplotlib
 - Jupyter Lab
-- Docker container (`quantum-lab`)
+- Docker
 
 ## 📚 References
 
@@ -71,4 +59,4 @@ My study journal combining **Linear Algebra** (Strang), **Python** and **Quantum
 
 ---
 
-*Updated as I progress. Each notebook connects Strang's linear algebra with quantum computing concepts and Qiskit implementations.*
+*Each notebook connects linear algebra theory with quantum computing practice.*
