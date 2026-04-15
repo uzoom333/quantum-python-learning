@@ -1,0 +1,69 @@
+<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#111827;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1320;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="300" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="#60a5fa">
+    <line x1="0" y1="50" x2="900" y2="50" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="900" y2="100" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="900" y2="150" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="900" y2="250" stroke-width="0.5"/>
+    <line x1="150" y1="0" x2="150" y2="300" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="300" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="300" stroke-width="0.5"/>
+    <line x1="750" y1="0" x2="750" y2="300" stroke-width="0.5"/>
+  </g>
+  <g opacity="0.15" stroke="#60a5fa" stroke-width="1.5" fill="none">
+    <line x1="30" y1="60" x2="250" y2="60"/>
+    <line x1="30" y1="90" x2="250" y2="90"/>
+    <line x1="30" y1="120" x2="250" y2="120"/>
+    <rect x="60" y="47" width="26" height="26" rx="3" stroke="#60a5fa" fill="rgba(96,165,250,0.1)"/>
+    <text x="73" y="65" font-family="monospace" font-size="12" fill="#60a5fa" text-anchor="middle">H</text>
+    <circle cx="120" cy="60" r="4" fill="#a78bfa"/>
+    <line x1="120" y1="60" x2="120" y2="90" stroke="#a78bfa"/>
+    <circle cx="120" cy="90" r="8" fill="none" stroke="#a78bfa"/>
+    <line x1="112" y1="90" x2="128" y2="90" stroke="#a78bfa"/>
+    <line x1="120" y1="82" x2="120" y2="98" stroke="#a78bfa"/>
+    <rect x="180" y="47" width="26" height="26" rx="3" stroke="#34d399" fill="rgba(52,211,153,0.1)"/>
+    <text x="193" y="65" font-family="monospace" font-size="12" fill="#34d399" text-anchor="middle">M</text>
+    <rect x="180" y="77" width="26" height="26" rx="3" stroke="#34d399" fill="rgba(52,211,153,0.1)"/>
+    <text x="193" y="95" font-family="monospace" font-size="12" fill="#34d399" text-anchor="middle">M</text>
+  </g>
+  <g opacity="0.3">
+    <circle cx="700" cy="50" r="2" fill="#60a5fa"/>
+    <circle cx="750" cy="80" r="1.5" fill="#a78bfa"/>
+    <circle cx="820" cy="40" r="1" fill="#34d399"/>
+    <circle cx="680" cy="100" r="1.5" fill="#60a5fa"/>
+    <circle cx="780" cy="120" r="2" fill="#a78bfa"/>
+    <circle cx="850" cy="70" r="1" fill="#34d399"/>
+    <circle cx="720" cy="140" r="1.5" fill="#60a5fa"/>
+    <circle cx="660" cy="70" r="1" fill="#a78bfa"/>
+  </g>
+  <g opacity="0.12">
+    <text x="620" y="230" font-family="monospace" font-size="11" fill="#64748b">uzoom@quantum:~$ qiskit run circuit.py</text>
+    <text x="620" y="248" font-family="monospace" font-size="11" fill="#34d399">▶ executing on ibm_quantum...</text>
+    <text x="620" y="266" font-family="monospace" font-size="11" fill="#60a5fa">✓ results: |00⟩=498  |11⟩=502</text>
+  </g>
+  <rect x="0" y="296" width="900" height="4" fill="url(#accent)"/>
+  <text x="450" y="165" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700" fill="url(#accent)" text-anchor="middle" filter="url(#glow)">Renato Morais</text>
+  <text x="450" y="200" font-family="monospace" font-size="16" fill="#94a3b8" text-anchor="middle">CS Student · Backend Developer · Quantum Computing</text>
+  <text x="450" y="230" font-family="monospace" font-size="12" fill="#64748b" text-anchor="middle">Goiânia, BR  ·  github.com/uzoom333</text>
+</svg>
