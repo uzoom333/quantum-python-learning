@@ -18,14 +18,14 @@
 
 ### Dimension grows exponentially
 
-| Qubits | Dimension | Base vectors |
+| Qubits | Dimension | Basis vectors |
 |--------|-----------|-------------|
 | 1 | $2^1 = 2$ | $\|0\rangle, \|1\rangle$ |
 | 2 | $2^2 = 4$ | $\|00\rangle, \|01\rangle, \|10\rangle, \|11\rangle$ |
 | 3 | $2^3 = 8$ | $\|000\rangle, \ldots, \|111\rangle$ |
 | n | $2^n$ | $2^n$ base vectors |
 
-This exponential growth is why quantum computing is powerful — 30 qubits work in a space of over 1 billion dimensions.
+This exponential growth is central to both the expressive capacity of quantum state spaces and the difficulty of simulating them classically. Dimension alone does not guarantee a computational advantage.
 
 ### Computational basis for 2 qubits
 
@@ -33,7 +33,7 @@ $$|00\rangle = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}, \quad |01\rangle 
 
 These are 4 independent vectors in $\mathbb{C}^4$ — they form the identity matrix. Rank = 4, dimension = 4.
 
-Any 2-qubit state is a unique combination of this base (Strang's basis property).
+Any 2-qubit state is a unique combination of this basis (Strang's basis property).
 
 ---
 
@@ -47,9 +47,9 @@ $$|\Phi^+\rangle = \frac{1}{\sqrt{2}}|00\rangle + \frac{1}{\sqrt{2}}|11\rangle =
 
 ### Connection to Strang 2.3
 
-This is a linear combination of the base — uses only 2 of the 4 base vectors ($|00\rangle$ and $|11\rangle$). The coefficients for $|01\rangle$ and $|10\rangle$ are zero.
+This is a linear combination of the basis vectors and has nonzero amplitudes only for $|00\rangle$ and $|11\rangle$. The coefficients for $|01\rangle$ and $|10\rangle$ are zero.
 
-So the Bell State lives in a 2-dimensional subspace of the 4-dimensional space. The full base has dimension 4, but this specific state only occupies dimension 2.
+The state therefore belongs to the subspace spanned by $|00\rangle$ and $|11\rangle$. The full two-qubit space still has dimension 4, while this particular state is one vector within that subspace.
 
 Same concept as Exercise 2: 6 vectors in $\mathbb{R}^4$ only spanned a 3-dimensional subspace.
 
@@ -66,7 +66,7 @@ The Bell State is special because of **entanglement** — the two qubits are cor
 - If first qubit = 0 → second qubit is guaranteed 0
 - If first qubit = 1 → second qubit is guaranteed 1
 
-This is not the same as two independent coins. It's a quantum correlation with no classical equivalent.
+This is not the same as two independent coins. The measurement outcomes are correlated, and the state cannot be factored into independent single-qubit states.
 
 ### Qiskit verification
 
